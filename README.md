@@ -59,7 +59,7 @@ jobs:
 
       - name: Jirafy Changelog
         id: changelog
-        uses: onXmaps/jirafy-changelog@v1.0.0
+        uses: victorkaleev1/jirafy-changelog@v1.0.0
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           jiraHost: ${{ secrets.JIRA_HOST }}
@@ -86,7 +86,7 @@ If you have two specific references you want:
 ```yaml
 - name: Jirafy Changelog
   id: changelog
-  uses: onXmaps/jirafy-changelog@v1.0.0
+  uses: victorkaleev1/jirafy-changelog@v1.0.0
   with:
     head-ref: 'v0.0.2'
     base-ref: 'v0.0.1'
